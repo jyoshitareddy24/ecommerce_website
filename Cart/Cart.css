@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Georgia, serif;
+}
+
+/* Main Cart Container */
+
+#cartContent {
+    width: 60%;
+    margin: 30px auto;
+}
+
+/* Individual Cart Card */
+
+.cart-card {
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    border: 1px solid #d5d5e5;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    gap: 20px;
+}
+
+/* Product Image */
+
+.cart-image {
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-image img {
+    width: 180px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Product Information */
+
+.cart-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cart-info h1 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.cart-info p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.3;
+}
+
+/* Remove Button */
+
+.remove-btn {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.remove-btn button {
+    background-color: #c34b68;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.remove-btn button:hover {
+    background-color: #a52d4c;
+}
+
+/* Total Price */
+
+#totalPrice {
+    width: 60%;
+    margin: 25px auto;
+    text-align: right;
+}
+
+#totalPrice h1 {
+    font-size: 30px;
+    color: #222;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    #cartContent,
+    #totalPrice {
+        width: 90%;
+    }
+
+    .cart-card {
+        min-height: auto;
+    }
+
+    .cart-info h1 {
+        font-size: 22px;
+    }
+
+    .cart-info p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cart-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .cart-image,
+    .cart-info,
+    .remove-btn {
+        width: 100%;
+    }
+
+    .cart-info {
+        align-items: flex-start;
+    }
+
+    .remove-btn {
+        justify-content: flex-end;
+    }
+
+}
+.back-btn {
+    background-color: #2874f0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background-color: #1558c0;
+}
