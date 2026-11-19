@@ -98,5 +98,5 @@ function removeProduct(index) {
 
 }
 function backToHome() {
-    window.location.href = "../Home/Home.html";
+    window.location.href = "../Home/index.html";
 }
