@@ -22,7 +22,7 @@ loginForm.addEventListener("submit", function(event) {
 
         localStorage.setItem("isLoggedIn", "true");
 
-        window.location.href = "../Home/Home.html";
+        window.location.href = "../Home/index.html";
 
     } 
     else {
